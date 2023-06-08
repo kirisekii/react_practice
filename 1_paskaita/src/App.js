@@ -8,6 +8,8 @@ import Card from "./components/Card";
 import Avatar from "./components/Avatar";
 import BestSellers from "./components/BestSellers";
 import Products from "./components/Products";
+import Welcome from "./components/Welcome";
+import { useState } from "react";
 
 function App() {
   const name = "Kristina";
@@ -21,9 +23,17 @@ function App() {
   };
 
   const surname = getNameV2();
+  const [loggedIn, setLoggedIn] = useState(false);
 
+  const handleLogIn = () => {
+    setLoggedIn((previousValue) => !previousValue);
+  };
   return (
     <div>
+      <Welcome isLoggedIn={loggedIn} />
+      <button onClick={handleLogIn}>{loggedIn ? "LogOut" : "logIn"}</button>
+      <Welcome isLoggedIn={true} />
+
       <h1>Kristina</h1>
       <h2>{name}</h2>
       <h2>{getName()}</h2>
