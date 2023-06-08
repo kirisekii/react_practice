@@ -1,0 +1,30 @@
+.btn {
+  background-color: aliceblue;
+  color: aliceblue;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  margin: 20px;
+  letter-spacing: 1.2px;
+}
+
+.text {
+  color: blue;
+  border: none;
+}
+
+.contained {
+  background-color: blue;
+  color: aliceblue;
+  border: 2px solid blue;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px;
+}
+
+.outlined {
+  border: 2px solid blue;
+  color: blue;
+}

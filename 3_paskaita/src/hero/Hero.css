@@ -1,0 +1,11 @@
+.hero {
+  width: 100vw;
+  background-color: blue;
+  color: white;
+  padding: 30px;
+}
+
+.hero h1,
+.hero h3 {
+  font-weight: 500;
+}
